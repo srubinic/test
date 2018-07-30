@@ -1,0 +1,126 @@
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+}
+
+[class*=".col-"]>*{
+    margin: 1rem;  
+}
+
+.col-2of12{width:16%;}
+.col-3of12{width: 25%;}
+.col-4of12{width:33.3%;}
+.col-5of12{width:42%;}
+.col-6of12{width: 50%;}
+.col-7of12{width: 58%;}
+.col-8of12{width:66%;}
+.col-9of12{width: 75%;}
+.col-10-12{width: 83%;}
+.col-11of12{width: 92%;}
+.col-12of12{width: 100%;}
+
+.canvas{
+    width: 85%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 20rem){
+    html{font-size: 0.7rem;}
+    p{font-size: 1rem;}
+    .canvas{width: 100%;}
+    p{font-size: 1.5rem;}
+    h1{font-size: 0.9rem;}
+    h2{font-size: 1rem;}
+    .col-2of12{width: 100%;}
+    .col-8of12{width: 100%}
+    #cornerimg{display: none;}
+    .closebtn{margin-bottom: 2rem;}
+    #nav a{line-height: 1.5rem;}
+    #nav{position: fixed;
+    margin-top: -1.72rem;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    visibility: hidden;
+    background-color: #000000;
+    opacity: 1;} 
+    .btncont{visibility: hidden;}
+}
+
+@media only screen and (max-width: 27rem){
+    html{font-size: 0.7rem;}
+    p{font-size: 1rem;}
+    .canvas{width: 100%;}
+    .col-2of12{width: 100%;}
+    .col-8of12{width: 100%}
+    #nav{position: fixed;
+    margin-top: -1.72rem;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    visibility: hidden;
+    background-color: #000000;
+    opacity: 1;}
+    #cornerimg{visibility: hidden;}
+    .btncont{visibility: hidden;}
+
+}
+
+@media only screen and (max-width: 48rem){
+    html{font-size: 0.7rem;}
+    p{font-size: 1rem;}
+    .canvas{width: 100%;}
+    h1{text-align: center;}
+    h2{text-align: center;}
+    #cornerimg{visibility: hidden;}
+    #nav{position: fixed; 
+    margin-top: -1.72rem;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    visibility: hidden;
+    background-color: #000000;
+    opacity: 1;}
+    nav a{margin-top:2rem; opacity: 1;}
+    .btncont{visibility: hidden;}
+}
+
+@media only screen and (max-width: 64rem){
+    .canvas{width: 100%;}
+    .col-2of12{width: 100%;}
+    .col-8of12{width: 100%}
+    h1{text-align: center;}
+    h2{text-align: center;}
+    #cornerimg{visibility: hidden;}
+    #nav{position: fixed; 
+    margin-top: -1rem;
+    visibility: hidden;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: #000000;
+    opacity: 1;}
+    nav a{margin-top:2rem; opacity: 1; line-height: 1.2rem;}
+    .btncont{visibility: hidden;}
+}
+
+
+@media only screen and (min-width: 64.1rem){
+    .closebtn{visibility: hidden;}
+    #navbtn{visibility: hidden;}
+    #topBtn{visibility: visible;}
+}
+
+
+@media only screen and (min-width: 90rem){
+    .closebtn{visibility: hidden;}
+    #navbtn{visibility: hidden;}
+    #topBtn{visibility: visible;}
+}
